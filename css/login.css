@@ -1,0 +1,166 @@
+body{
+    padding: 0;
+    margin: 0;
+    /*animation: bg 5s infinite;*/
+    /*background: url("../images/slide/principal.jpeg");*/
+    /*background: #f06;*/
+}
+.bg{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+    filter: blur(3px);
+}
+.form{
+  	overflow:hidden;
+    transform-style: preserve-3d;
+	transform-origin: top;
+	position: fixed;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 300px;
+	height: 300px;
+	border-radius: 20px;
+	background: linear-gradient(90deg,/*rgba(255,100,0,.8),*/rgba(255,0,0,.8),rgba(255,0,100,.8),rgba(100,0,255,.8));
+}
+.form h1{
+  position:absolute;
+  width:100%;
+  height:50px;
+  top:0;
+  text-align:center;
+  color: #fff;
+  background: linear-gradient(rgba(255,0,100,.8),rgba(100,0,255,.8));
+}
+.form h1:after{
+  /*content:'x';*/
+  position:absolute;
+  /*width:40px;
+  height:40px;*/
+  top:5px;
+  right:5px;
+  color: #fff;
+  background: #f00;
+  border-radius: 20px;
+  }
+.form form{
+	margin-top:80px;
+ }
+ .form form .inputBox{
+   	position:relative;
+	margin-top:30px;
+	width:98%;
+	left:50%;
+	transform: translateX(-50%);
+ }
+ .form form .inputBox input{
+    border: none;
+	padding:10px;
+	width:100%;
+	font-size:16px;
+	color:#fff;
+	background:transparent;
+	border-bottom: 1px solid #fff;
+	z-index:1;
+ }
+  .form form .inputBox label{
+	position:absolute;
+	top:0;
+	padding:10px;
+	width:100%;
+	font-size:16px;
+	color:#fff;
+	transition:.5s;
+	/*z-index:-1;*/
+ }
+ .form form .inputBox input:focus ~ label,
+ .form form .inputBox input:valid ~ label{
+   	top:-18px;
+	font-size:11px;
+	color:#fee;
+ }
+.form-signup{
+    transform-style: preserve-3d;
+	transform-origin: top;
+	position: fixed;
+	top:50%;
+	left: 50%;
+	transform: rotateX(0deg) translate(-50%,-50%);
+	width: 300px;
+	height: 300px;
+	border-radius: 20px;
+	background: linear-gradient(90deg,rgba(255,100,0,.8),rgba(255,0,0,.8));
+}
+.bg .slide{
+	position: absolute;
+	width: 600%;
+	height: 100%;
+	animation: slidebg 30s infinite;
+}
+.bg .slide img{
+	width: 16.6%;
+	height: 100%;
+}
+.bg .vinheta{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(90% 90% at center,rgba(0,0,0,0),rgb(0,0,0));
+}
+.principal{
+    filter: blur(3px);
+}
+
+
+
+
+@keyframes slidebg{
+	0%{
+		left: 0;
+	}
+	15%{
+		left: 0;
+	}
+	16.6%{
+		left: -100%;
+	}
+	32%{
+		left: -100%;
+	}
+	33.3%{
+		left: -200%;
+	}
+	48.5%{
+		left: -200%;
+	}
+	50%{
+		left: -300%;
+	}
+	65%{
+		left: -300%;
+	}
+	66.6%{
+		left: -400%;
+	}
+	82%{
+		left: -400%;
+	}
+	83.3%{
+		left: -500%;
+	}
+	99.3%{
+		left: -500%;
+	}
+	100%{
+		left: -0%;
+	}
+}
+
+/* ##################### MEDIA  ################################# */
+@media screen and (max-width: 700px){
+}
+@media screen and (max-width: 560px){
+}
+@media screen and (max-width: 370px){
+}

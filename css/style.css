@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 19, 2019, 7:31:52 PM
+    Author     : ernesto
+*/
+body{
+    padding: 0;
+    margin: 0;
+   /* background: #f8f9fa;
+    animation: bg 5s infinite;*/
+}
+
+
+/* ##################### ANIMATION  ################################# */
+@keyframes cores{
+    0%{
+        border: 3px solid #09f;
+    }
+    35%{
+        border: 3px solid #f06;
+    }
+    75%{
+        border: 3px solid #60f;
+    }
+    100%{
+        border: 3px solid #09f;
+    }
+
+}
+@keyframes cicle{
+    0%{
+        border-left: 10px solid rgba(12,94,255,1);
+    }
+    25%{
+        border-left: 10px solid rgba(12,90,134,.5);
+        border-bottom: 10px solid rgba(12,90,255,1);
+    }
+    50%{
+        border-right: 10px solid rgba(12,90,255,1);
+    }
+    75%{
+        border-top: 10px solid rgba(12,90,255,1);
+        border-left: 10px solid rgba(12,90,134,.5);
+    }
+    100%{
+        border-left: 10px solid rgba(12,94,255,1);
+    }
+
+}
+@keyframes bg{
+    0%{
+       background: linear-gradient(90deg,rgba(255,100,0,.8),rgba(255,0,0,.8),rgba(255,0,100,.8),rgba(100,0,255,.8));
+    }
+    50%{
+        background: linear-gradient(90deg,rgba(255,0,0,.8),rgba(255,0,100,.8),rgba(100,0,255,.8));
+    }
+    75%{
+       background: linear-gradient(90deg,rgba(255,0,0,.8),rgba(255,0,100,.8));
+    }
+
+}
+
+
+
+
+/* ##################### MEDIA  ################################# */
+@media screen and (max-width: 700px){
+}
+@media screen and (max-width: 560px){
+}
+@media screen and (max-width: 370px){
+}
+
+

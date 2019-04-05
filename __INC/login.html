@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+	<title>Login to RecEvent</title>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Ernesto Argentina Cumbe">
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+<body>
+
+
+	<div class="bg">
+		<div class="slide">
+			<img src="../images/slide/principal.jpeg" class="principal">
+			<img src="../images/slide/slide1.jpg">
+			<img src="../images/slide/slide2.jpg">
+			<img src="../images/slide/slide3.jpg">
+			<img src="../images/slide/slide4.jpg">
+			<img src="../images/slide/slide5.jpg">
+		</div>
+		<div class="vinheta">
+			<button class="btn btn-primary" onclick="login()">login</button>
+			<button class="btn btn-success" onclick="signup()">signup</button>
+		</div>
+	</div>
+
+
+	<div class="form">
+	  <h1>LOGIN</h1>
+	  <form>
+		<div class="inputBox">
+		  <input type="text" required="">
+		  <label>Username</label>
+		</div>
+		<div class="inputBox">
+		  <input type="password" required="">
+		  <label>Password</label>
+		</div>
+		<input type="submit" value="login">
+	  </form>
+	</div>
+	<div class="form-signup"></div>
+
+
+	<script type="text/javascript">
+			document.querySelector(".form-signup").style.transition="1s";
+			document.querySelector(".form").style.transition="1s";
+
+		function login(){
+			document.querySelector(".form-signup").style.transform="rotateX(90deg) translate(-50%,-50%)";
+			document.querySelector(".form").style.transform="rotateX(0deg) translate(-50%,-50%)";
+			document.querySelector(".form").style.zIndex="1";
+			document.querySelector(".form-signup").style.zIndex="-1";
+		}
+		function signup(){
+			document.querySelector(".form-signup").style.transform="rotateX(0deg) translate(-50%,-50%)";
+			document.querySelector(".form").style.transform="rotateX(90deg) translate(-50%,-50%)";
+			document.querySelector(".form").style.zIndex="-1";
+			document.querySelector(".form-signup").style.zIndex="1";
+		}
+	</script>
+
+</body>
+</html>

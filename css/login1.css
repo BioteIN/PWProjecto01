@@ -1,0 +1,220 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system;
+}
+.bg{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+    filter: blur(3px);
+}
+.form{
+  	overflow:hidden;
+    transform-style: preserve-3d;
+	transform-origin: top;
+	position: fixed;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+	background: linear-gradient(#fefefe, #aaa);
+}
+form{
+	transition: 1s;
+	overflow:hidden;
+    transform-style: preserve-3d;
+	transform-origin: top;
+	position: fixed;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+	background: linear-gradient(#fefefe, #aaa);
+ }
+form h1{
+  position:absolute;
+  font-family: all;
+  width:100%;
+  height:40px;
+  top:0;
+  text-align:center;
+  color: #555;
+  font-size: 24px;
+  background: linear-gradient(#fefefe, #aaa);
+  margin-bottom: 10px;
+  padding-top:5px;
+}
+.form form{
+	margin-top:80px;
+ }
+ form .inputBox{
+   	position:relative;
+	margin-top:25px;
+	width:92%;
+	left:50%;
+	transform: translateX(-50%);
+ }
+   form .inputBox input{
+     border: none;
+ 	padding:10px;
+ 	width:100%;
+ 	font-size:16px;
+ 	color:#444;
+ 	background:transparent;
+ 	border-bottom: 1px solid #fff;
+ 	z-index:1;
+  }
+  form .inputBox input[type="checkbox"]{
+  	position: relative;
+  	float: left;
+  	text-align: left;
+  	max-width: 10px;
+ }
+ form .inputBox .relative{
+  	position: relative;
+  	float: left;
+  	text-align: left;
+  	max-width: 10px;
+ }
+  form .inputBox label{
+	position:absolute;
+	top:0;
+	left: 0;
+	padding:10px;
+	font-size:16px;
+	color:#555;
+	transition:.5s;
+ }
+   form .inputBox label:hover{
+   	top:-18px;
+	font-size:11px;
+	color:#555;
+   }
+  form .inputBox input:hover ~label,
+  form .inputBox input:focus ~ label,
+ form .inputBox input:valid ~ label{
+   	top:-18px;
+	font-size:11px;
+	color:#555;
+ }
+.form-signup{
+	transition: 1s;
+    transform-style: preserve-3d;
+	transform-origin: top;
+	position: fixed;
+	top:50%;
+	left: 50%;
+	transform: rotateX(90deg) translate(-50%,-50%);
+	width: 300px;
+	height: 300px;
+	border-radius: 20px;
+	background: linear-gradient(90deg,rgba(255,100,0,.8),rgba(255,0,0,.8));
+}
+.bg .slide{
+	position: absolute;
+	width: 600%;
+	height: 100%;
+	animation: slidebg 30s infinite;
+}
+.bg .slide img{
+	width: 16.6%;
+	height: 100%;
+}
+.bg .vinheta{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(90% 90% at center,rgba(0,0,0,0),rgb(0,0,0));
+}
+.principal{
+    filter: blur(3px);
+}
+.butoesBaixo{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background: linear-gradient(#fefefe, #aaa);
+}
+.butoesBaixo button{
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 100%;
+	background: transparent;
+	color: #333;
+	border:none;
+}
+.hoverAzul:hover{
+	background: #06f;
+	color: white;
+}
+.hoverVermelho:hover{
+	background: #d22;
+	color: white;
+}
+.mrg-tp{
+	margin-top: 50px !important;
+}
+
+
+
+@keyframes slidebg{
+	0%{
+		left: 0;
+	}
+	15%{
+		left: 0;
+	}
+	16.6%{
+		left: -100%;
+	}
+	32%{
+		left: -100%;
+	}
+	33.3%{
+		left: -200%;
+	}
+	48.5%{
+		left: -200%;
+	}
+	50%{
+		left: -300%;
+	}
+	65%{
+		left: -300%;
+	}
+	66.6%{
+		left: -400%;
+	}
+	82%{
+		left: -400%;
+	}
+	83.3%{
+		left: -500%;
+	}
+	99.3%{
+		left: -500%;
+	}
+	100%{
+		left: -0%;
+	}
+}
+
+/* ##################### MEDIA  ################################# */
+@media screen and (max-width: 700px){
+}
+@media screen and (max-width: 560px){
+}
+@media screen and (max-width: 370px){
+}
+@media screen and (max-width: 280px){
+	form{
+		width: 100%;
+	}
+}

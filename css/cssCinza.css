@@ -1,0 +1,334 @@
+body{
+    /*background:#f0f0f0;*/
+    background: #dfdfdf;
+    font-family: Aclonica-Regular;
+    min-width: 236px;
+}
+@font-face{
+    font-family: charm;
+    src: url(../__vendor/fonts/Charm-Bold.ttf) format("truetype");
+}
+@font-face{
+    font-family: Aclonica-Regular;
+    src: url(../__Vendor/fonts/Aclonica-Regular.ttf) format("truetype");
+}
+.form-control:focus ~ .pesquisar input{
+    display: block;
+}
+.navbar{
+    /*padding: 0;*/
+    transition: 1s;
+    height: 40px;
+    background: #006040 !important;
+    /*background: #120b50 !important;*/
+}
+.itens-nav{
+    margin-top: 0;
+    height: 100%;
+    margin-left: 150px;
+}
+.itens-nav ul{
+
+}
+.itens-nav ul li{
+    position: relative;
+    float: left;
+    list-style:none;
+    margin-right: 20px;
+    color: #fff;
+}
+.itens-nav ul li a nav{
+    position: relative;
+    float: left;
+}
+.itens-nav ul li a i{
+    position: relative;
+    float: left;
+    margin-left: 5px;
+}
+.itens-nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.itens-nav ul li .pesquisar{
+    background: #fff;
+}
+nav .perfil .nome a img{
+    position: absolute;
+    width: 35px;
+    border-radius: 40px;
+    top: 3px;
+    right: 10px;
+}
+.cinza{
+    background: #ddd;
+    color: #666;
+}
+.logo{
+    position: relative;
+    float: left;
+    margin-right: 50px;
+    font-size: 25px;
+}
+.logo a nav{
+    position: relative;
+    top: -10px;
+    margin-left: 10px;
+}
+.logo a .imgLogo{
+    position: relative;
+    top: -10px;
+}
+.container{
+    margin-top: 50px;
+    max-width: 1100px;
+    background: #f06;
+}
+.posts{
+    position: relative;
+    float: left;
+    width: 70%;
+    color: #666;
+}
+.posts .post{
+    position: relative;
+    float: left;
+    width: 100%;
+    background: #68f;
+    /*border: 1px solid #666;*/
+    margin-bottom: 20px;
+    height: auto;
+    min-height: 50px;
+    border-radius: 5px;
+}
+.posts .post img{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.posts .post .perfil{
+    border-radius: 5px;
+   position: relative;
+    float: left;
+    width: 100%;
+    height: 50px;
+    background: #fff; 
+}
+.posts .post .accoes{
+    border-radius: 5px;
+   position: relative;
+    float: left;
+    width: 100%;
+    min-height: 50px;
+    background: #fff; 
+}
+.like_share{
+    position: relative;
+    float: left;
+    width: calc(100% - 10px);
+    margin-left: 10px;
+}
+.like_share label{
+    position: relative;
+    /*float: right;*/
+    text-align: right;
+}
+.perfil .nome a img{
+    position: relative;
+    float: left;
+    width: 40px;
+    border-radius: 40px;
+}
+.perfil .nome a label{
+    position: relative;
+    float: left;
+}
+.perfil .nome a .hora{
+    position: absolute;
+    top: -20px;
+}
+.perfil .nome{
+    margin: 5px;
+}
+/*-------------logo-------*/
+.logo{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+.logo a>*{
+    position: relative;
+    float: left;
+    color: #fff;
+}
+.logo a nav{
+    margin-top: -5px;
+}
+
+
+/*--------------opcoes---------*/
+#opcoes{
+    position: fixed;
+    right: -300px;
+    top: 40px;
+    width: 290px;
+    height: calc(100vh - 40px);
+    background: #fff;
+    z-index: 1;
+    transition: .5s;
+    overflow-y: scroll;
+    padding: 0;
+}
+#opcoes .header{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 200px;
+    color: #fff;
+    /*background: url("../images/img3.jpg");*/
+    background: url("../images/perfilBg.jpg");
+    background-size: 100% 100%;
+    margin: 0;
+}
+#opcoes .header .dados{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#opcoes .header .dados img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}/*----------menu--*/
+#opcoes .menu{
+    width: 100%;
+}
+#opcoes .menu{
+    position: relative;
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+}
+#opcoes .menu ul{
+    width: 100%;
+    list-style: none;
+}
+#opcoes .menu ul li{
+    border: none;
+    border-left: 3px solid #666;
+    margin-top: 10px;
+    transition: .5s;
+}
+#opcoes .menu ul li:hover{
+    border-left: 20px solid #063;
+}
+
+
+
+
+
+/*-----------------pesquisa*-------------*/
+#pesquisa{
+    position: fixed;
+    left: -300px;
+    top: 40px;
+    width: 290px;
+    height: calc(100vh - 40px);
+    background: #fff;
+    z-index: 1;
+    transition: .5s;
+    overflow-y: scroll;
+    padding: 0;
+}
+#pesquisa .input{
+    position: relative;
+    background: #ddd;
+    float:left;
+    width: 100%;
+}
+#pesquisa .input input{
+    position: relative;
+    float:left;
+    width: 100%;
+}
+
+
+
+/*--------------------------------*/
+.sugestoes{
+    position: relative;
+    float: left;
+    width: calc(30% - 30px);
+    margin-left: 30px;
+    background: #06f;
+    height: 300px;
+}
+.container .sugestoes .perfis{
+    position: fixed;
+    width: 291px;
+    background: #60f;
+    height: 250px;
+}
+
+
+
+
+@keyframes bg{
+    0%{
+       background: linear-gradient(90deg,rgba(255,100,0,.8),rgba(255,0,0,.8));
+    }
+    50%{
+        background: linear-gradient(90deg,rgba(255,150,0,.8),rgba(255,50,50,.8)/*,rgba(255,0,150,.8),rgba(150,0,255,.8))*/);
+    }
+    75%{
+        background: linear-gradient(90deg,rgba(255,100,0,.8),rgba(255,0,0,.8)/*,rgba(255,0,100,.8),rgba(100,0,255,.8))*/);
+    }
+    95%{
+        background: linear-gradient(90deg,rgba(255,150,0,.8),rgba(255,0,50,.8)/*,rgba(255,0,170,.8),rgba(170,0,255,.8))*/);
+    }
+    100%{
+        background: linear-gradient(90deg,rgba(255,100,0,.8),rgba(255,50,0,.8)/*,rgba(255,0,100,.8),rgba(100,0,255,.8))*/);
+    }
+
+
+}
+@media screen and (max-width:1000px){
+    .posts{
+        width: 100%;
+    }
+    .posts .post{
+        max-width: 700px;
+    }
+    .sugestoes{
+        display: none;
+    }
+    .container{
+        max-width: 700px;
+    }
+}
+@media screen and (max-width:700px){
+    .post{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px){
+    .hide{
+        display: none;
+    }
+    .itens-nav{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:300px){
+  /*  .logo{
+        display: none;
+    }*/
+}
+@media screen and (max-width:352px){
+   /* .logo{
+        font-size: 15px;
+    }*/
+}
